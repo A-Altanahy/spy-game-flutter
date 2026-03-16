@@ -1,0 +1,19 @@
+#!/bin/bash
+# Shell script to run Spyfall app with environment variables
+# 
+# Copy this file to run_dev.sh and replace with your actual credentials
+# Make executable: chmod +x run_dev.sh
+# 
+# Usage: ./run_dev.sh
+
+echo "Starting Spyfall app with environment variables..."
+
+# Replace these with your actual credentials
+export DRIVE_API_KEY="your_google_drive_api_key_here"
+export DRIVE_FOLDER_ID="your_drive_folder_id_here"
+
+# Run Flutter with dart-define flags
+flutter run \
+  --dart-define=DRIVE_API_KEY=$DRIVE_API_KEY \
+  --dart-define=DRIVE_FOLDER_ID=$DRIVE_FOLDER_ID
+
