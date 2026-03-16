@@ -44,13 +44,7 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Environment variables with secrets - NEVER COMMIT THESE!
+# Local environment files
 .env
 *.env
 !.env.example
-
-# Run scripts with hardcoded secrets - NEVER COMMIT!
-run_dev.bat
-run_dev.sh
-build_release.bat
-build_release.sh

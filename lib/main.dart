@@ -9,7 +9,6 @@ import 'package:spyfall/core/theme/app_theme.dart';
 import 'package:spyfall/features/home/screens/home_screen.dart';
 import 'package:spyfall/data/legacy/photos.dart' as photos;
 import 'package:spyfall/core/localization/app_localizations.dart';
-// import 'package:spyfall/data/services/drive_service.dart'; // Removed
 
 // Make these global variables to track if features can be used
 bool notificationsAvailable = false;
@@ -44,8 +43,7 @@ Future<void> backgroundInitApp() async {
   isInitializing = true;
 
   try {
-    // Future: Add automatic GitHub sync here if desired
-    // For now, we rely on manual sync in the Photo Editor
+    // We rely on manual content sync from the photo editor.
   } catch (e) {
     // print('Error in background initialization: $e');
   } finally {
